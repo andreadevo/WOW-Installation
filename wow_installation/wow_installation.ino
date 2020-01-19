@@ -39,3 +39,19 @@ void loop() {
     delay(1000);
   }
 }
+
+void stopMotor() {
+  
+}
+
+void startNeopixels() {
+  
+}
+
+void stopMotor() {
+  
+}
+
+void startNeopixels() {
+  
+}
