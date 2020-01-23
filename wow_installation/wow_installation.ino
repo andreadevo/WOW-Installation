@@ -16,30 +16,32 @@ void setup() {
     Serial.println("Not connected");
     while(1);
   } else {
-    Serial.pringln("Connected!");
+    Serial.println("Connected!");
   }
 }
 
 void loop() {
   if (sensor.isLeftTouched() == true) {
     // Left pad connects to CS1 touch pad
+    Serial.println("Touched!");
 
     // Start motion and light interactions
-    startMotor(); 
-    startNeopixels();
+    //startMotor(); 
+    //startNeopixels();
 
     // Turn on interactions for 30 seconds 
     startTime = millis();
     while ((millis() - startTime) < stopTime); 
 
     // Stop motion and light interactions
-    stopMotor();
-    stopNeopixels();
+    //stopMotor();
+    //stopNeopixels();
 
     delay(1000);
   }
 }
 
+/*
 void stopMotor() {
   
 }
@@ -55,3 +57,4 @@ void stopMotor() {
 void startNeopixels() {
   
 }
+*/
